@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="GENERAL INSIGHT"
+            android:textColor="#FFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/linearbutton"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:gravity="bottom|center">
+
+            <Button
+                android:id="@+id/funnel"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/funnel"/>
+            <Button
+                android:id="@+id/placeholder"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/placeholder"/>
+            <Button
+                android:id="@id/calendar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/calendar"/>
+            <Button
+                android:id="@+id/goo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/go_background"
+                android:text="Go!"
+                android:textColor="#FFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topbuttons"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linearbutton"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/InButton"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="In"
+                android:textSize="11dp"
+                android:background="@drawable/leftblue"
+                android:textColor="#FFF"
+                />
+            <Button
+                android:id="@+id/OutButton"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:text="Out"
+                android:textSize="11dp"
+                android:textColor="#000"
+                android:background="@drawable/rightwhite"/>
+            <Button
+                android:id="@+id/Adult"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Adult"
+                android:textSize="11dp"
+                android:textColor="#FFF"
+                android:background="@drawable/leftblue"/>
+            <Button
+                android:id="@+id/Child"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Child"
+                android:textSize="11dp"
+                android:textColor="#000"
+                android:background="@drawable/rightwhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/endbuttons"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/topbuttons"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/SInc"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Staf Included"
+                android:textSize="11dp"
+                android:textColor="#FFF"
+                android:background="@drawable/leftblue"/>
+            <Button
+                android:id="@+id/SDec"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:text="Staf Excluded"
+                android:textSize="11dp"
+                android:textColor="#000"
+                android:background="@drawable/rightwhite"/>
+            <Button
+                android:id="@+id/WOn"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Weekly On"
+                android:textSize="11dp"
+                android:textColor="#FFF"
+                android:background="@drawable/leftblue"/>
+            <Button
+                android:id="@+id/WOff"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:text="Weekly Off"
+                android:textSize="11dp"
+                android:textColor="#000"
+                android:background="@drawable/rightwhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:layout_below="@+id/endbuttons"></LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:foregroundGravity="top"
+        android:contentDescription="@null"
+        android:background="@drawable/logo"/>
+    <LinearLayout
+        android:id="@+id/idpass"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:background="@drawable/linear_shadow"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="40dp"/>
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:hint="Username"
+            android:paddingLeft="15dp"
+            android:inputType="text"
+            android:gravity="center"
+            android:drawableStart="@drawable/id"
+            android:background="@drawable/edittext_corners"
+            android:layout_marginBottom="20dp"/>
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:paddingLeft="15dp"
+            android:drawableStart="@drawable/pass"
+            android:gravity="center"
+            android:background="@drawable/edittext_corners"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textColor="#808080"
+            android:text="By pressing 'submit' you agree to our"/>
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000"
+            android:linksClickable="true" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/top" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/social"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/google"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/google"
+            android:layout_marginRight="16dp"/>
+        <Button
+            android:id="@+id/facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/facebook"
+            android:layout_marginRight="16dp"/>
+        <Button
+            android:id="@+id/twitter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/twitter"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

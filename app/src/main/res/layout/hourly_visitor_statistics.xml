@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="HOURLY VISITOR STATISTICS"
+        android:textColor="#FFF"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/linearbutton"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:gravity="bottom|center">
+
+        <Button
+            android:id="@+id/funnel"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/funnel"/>
+        <Button
+            android:id="@+id/placeholder"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/placeholder"/>
+        <Button
+            android:id="@id/calendar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/calendar"
+            android:layout_marginRight="20dp"/>
+        <Button
+            android:id="@+id/goo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/go_background"
+            android:text="Go!"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+
+</RelativeLayout>
